@@ -26,7 +26,22 @@ namespace FindAndReplace
     public string SplitArray()
     {
       string[] test = _sentence.Split();
-      Console.WriteLine(test[1]);
+      return string.Join(" ", test);
+    }
+    public string FindAndReplace()
+    {
+      string[] test = _sentence.Split();
+
+      Console.WriteLine(test.Length);
+      for(int i = 0; i <= test.Length - 1; i++)
+      {
+        if(test[i] == _word)
+        {
+          Console.WriteLine("TEST!");
+          test[i] = _replace;
+        }
+      }
+        Console.WriteLine(test[1]);
       return string.Join(" ", test);
     }
   }

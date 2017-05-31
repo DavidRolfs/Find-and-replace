@@ -18,5 +18,11 @@ namespace FindAndReplace
       Object newObject = new Object("Hello World!", "World!", "Universe");
       Assert.Equal("Hello World!", newObject.SplitArray());
     }
+    [Fact]
+    public void Get_LoopAndCompare_array()
+    {
+      Object newObject = new Object("Hello World!", "World!", "Universe");
+      Assert.Equal("Hello Universe", newObject.FindAndReplace());
+    }
   }
 }
