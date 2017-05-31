@@ -16,6 +16,7 @@ namespace FindAndReplace
       _sentence = sentence;
       _word = word;
       _replace = replace;
+
     }
 
     public string GetSentence()
@@ -42,7 +43,9 @@ namespace FindAndReplace
         }
       }
         Console.WriteLine(test[1]);
-      return string.Join(" ", test);
+      string result = string.Join(" ", test);
+      Console.WriteLine(result);
+      return result;
     }
   }
 }

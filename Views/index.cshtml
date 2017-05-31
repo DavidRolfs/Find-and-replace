@@ -1,0 +1,20 @@
+@{
+  Layout = "Shared/_Layout.cshtml";
+}
+
+<div class = "container">
+  <p>Input a sentence, which word you want to replace, and what word you want to replace it with?</p>
+
+  <form action="/result" method="post">
+    <label for="sentence">Enter Sentence</label>
+    <input type="text" name="sentence">
+
+    <label for="word">Enter word to be replaced</label>
+    <input type="text" name="word">
+
+    <label for="replace">enter word to replace another word with</label>
+    <input type="text" name="replace">
+
+    <button type="submit" name="button">SUBMIT</button>
+  </form>
+</div>
