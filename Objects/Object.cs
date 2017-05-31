@@ -23,11 +23,11 @@ namespace FindAndReplace
       return _sentence;
     }
 
-    public int SplitArray()
+    public string SplitArray()
     {
       string[] test = _sentence.Split();
       Console.WriteLine(test[1]);
-      return test.Length;
+      return string.Join(" ", test);
     }
   }
 }

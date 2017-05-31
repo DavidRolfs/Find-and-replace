@@ -10,13 +10,13 @@ namespace FindAndReplace
     public void Get_userInputSentence_helloworld()
     {
       Object newObject = new Object("Hello World!", "World!", "Universe");
-      Assert.Equal("Hello World!", newObject.GetSentence());
+      Assert.Equal("Hello World!", newObject.SplitArray());
     }
     [Fact]
     public void Get_SentenceSplit_array()
     {
       Object newObject = new Object("Hello World!", "World!", "Universe");
-      Assert.Equal(2, newObject.SplitArray());
+      Assert.Equal("Hello World!", newObject.SplitArray());
     }
   }
 }
